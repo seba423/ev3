@@ -1,4 +1,5 @@
 #!/usr/bin/env pybricks-micropython
+import "lib.py"
 from pybricks.hubs import EV3Brick
 from pybricks.ev3devices import (Motor, TouchSensor, ColorSensor,
                                  InfraredSensor, UltrasonicSensor, GyroSensor)
@@ -17,4 +18,5 @@ ev3 = EV3Brick()
 left = Motor(Port.A)
 right = Motor(Port.B)
 robot = DriveBase(left,right, wheel_diameter=55.5, axle_track=104)
+gyro =GyroSensor(Port.1, positive_direction=Direction.CLOCKWISE)
 # Write your program here.
