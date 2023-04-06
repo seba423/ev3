@@ -20,3 +20,7 @@ right = Motor(Port.B)
 robot = DriveBase(left,right, wheel_diameter=55.5, axle_track=104)
 gyro =GyroSensor(Port.1, positive_direction=Direction.CLOCKWISE)
 # Write your program here.
+robot.settings(70)
+robot.straight(600)
+
+
